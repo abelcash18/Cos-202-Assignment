@@ -1,6 +1,5 @@
 package cit.cos202.lab2;
 
-
 public class VehicleLab {
     public static void main(String[] args) {
         // Create 3 vehicle objects using different constructors
@@ -19,13 +18,13 @@ public class VehicleLab {
         System.out.println("--- Testing Vehicle 1 (Toyota) ---");
         v1.drive(200); // 200km * 0.07 = 14L consumed
         System.out.println("After driving: " + v1);
-        v1.refuel(20);  // Add 20L
+        v1.refuel(20); // Add 20L
         System.out.println("After refuelling: " + v1);
         System.out.println();
 
         // --- Operations on Vehicle 2 ---
         System.out.println("--- Testing Vehicle 2 (Honda - Starts Empty) ---");
-        v2.drive(50);  // Should fail / run out of gas instantly
+        v2.drive(50); // Should fail / run out of gas instantly
         v2.refuel(40); // Refuel to allow driving
         System.out.println("After refuelling: " + v2);
         v2.drive(100); // Consumes 7L
@@ -45,3 +44,4 @@ public class VehicleLab {
         System.out.println("Vehicles after reset: " + Vehicle.getTotalVehiclesCreated());
     }
 }
+
