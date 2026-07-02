@@ -1,0 +1,16 @@
+// Name: Joseph Abel Olayinka
+// Matric no:  EDU2509276
+// Faculty: Education
+// Department: Curriculum and Instructional Technology
+// Course area: Computer Science Education
+//Course: Cos 202
+
+Buggy output vs Fixed output
+
+Example with n = 5
+Buggy output: 0 2 4 6 8
+Fixed output: 2 4 6 8 10
+
+What the mistake is:
+The buggy loop starts i at 0, so the first printed even number is 0 instead of 2. The loop’s condition (count < n) is correct,
+ so it still prints exactly n values—but the sequence is shifted down by 2.

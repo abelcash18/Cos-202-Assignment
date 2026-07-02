@@ -1,0 +1,11 @@
+// Name: Joseph Abel Olayinka
+// Matric no:  EDU2509276
+// Faculty: Education
+// Department: Curriculum and Instructional Technology
+// Course area: Computer Science Education
+//Course: Cos 202
+
+     The mistake was an off-by-one error located in the while loop's continuation condition.
+ By using count <= n instead of count < n, the loop was allowed to execute one extra time when count was exactly equal to n.
+  Because zero-based tracking was used (counting from 0 to n-1 for n items), this extra iteration caused the program to print 
+  $n + 1$ even numbers instead of the requested $n$.
