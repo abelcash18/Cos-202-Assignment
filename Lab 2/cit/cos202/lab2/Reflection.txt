@@ -1,3 +1,10 @@
+// Name: Joseph Abel Olayinka
+// Matric no:  EDU2509276
+// Faculty: Education
+// Department: Curriculum and Instructional Technology
+// Course area: Computer Science Education
+//Course: Cos 202
+
 When I designed validation for the Vehicle class, I prioritized fail-fast, local, and single-source-of-truth principles. 
 Design decisions I made
 1. Constructor + Setter Validation: I put all invariants in the constructor and in setters, not in external functions. 
