@@ -6,9 +6,7 @@
 //Course: Cos 202
 
 import java.util.Scanner;
-
 public class EvenNumbersBugFix {
-
     // Buggy version intentionally prints the first n even numbers with a mistake.
     // Mistake: it starts at 0 instead of 2 (and therefore prints one extra incorrect value for n).
     public static void printFirstNEvensBuggy(int n) {
@@ -19,7 +17,6 @@ public class EvenNumbersBugFix {
         }
         System.out.println();
     }
-
     // Correct version: starts at 2.
     public static void printFirstNEvensFixed(int n) {
         int count = 0;
@@ -42,4 +39,3 @@ public class EvenNumbersBugFix {
         printFirstNEvensFixed(n);
     }
 }
-
