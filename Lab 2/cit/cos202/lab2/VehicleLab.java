@@ -3,7 +3,8 @@
 // Faculty: Education
 // Department: Curriculum and Instructional Technology
 // Course area: Computer Science Education
-//Course: Cos 202
+// Course: Cos 202
+// Level:200 Direct-Entry
 package cit.cos202.lab2;
 
 public class VehicleLab {
