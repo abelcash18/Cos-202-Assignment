@@ -1,0 +1,19 @@
+// Name: Joseph Abel Olayinka
+// Matric no:  EDU2509276
+// Faculty: Education
+// Department: Curriculum and Instructional Technology
+// Course area: Computer Science Education
+//Course: Cos 202
+
+      The program uses a loop to compute the sum 1 + 2 + ... + n.
+ It starts with total = 0 and i = 1. While i <= n, 
+ each loop iteration adds the current value of i to total (total = total + i), 
+ so total becomes a running sum. Then i is incremented by 1 (i = i + 1) to move to the next integer. 
+ When i becomes greater than n, the loop ends and total contains the final sum, which is printed.
+
+Loop Explanation: The loop acts as an accumulator designed to calculate a running total 
+from $1$ up to $n$. In each iteration, the loop control variable i increments by 1, representing 
+the next consecutive integer in the sequence. The program then takes the current value of i and adds
+ it to the total variable, updating the cumulative sum. By repeating this process until i exceeds $n$, 
+ the loop effectively builds the arithmetic series step-by-step, transforming individual sequential numbers 
+ into a single aggregate sum.

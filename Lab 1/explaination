@@ -1,6 +1,0 @@
-ii.     Loop ExplanationThe loop acts as an accumulator designed to calculate a running total 
-from $1$ up to $n$. In each iteration, the loop control variable i increments by 1, representing 
-the next consecutive integer in the sequence. The program then takes the current value of i and adds
- it to the total variable, updating the cumulative sum. By repeating this process until i exceeds $n$, 
- the loop effectively builds the arithmetic series step-by-step, transforming individual sequential numbers 
- into a single aggregate sum.

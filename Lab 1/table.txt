@@ -1,0 +1,15 @@
+
+// Name: Joseph Abel Olayinka
+// Matric no:  EDU2509276
+// Faculty: Education
+// Department: Curriculum and Instructional Technology
+// Course area: Computer Science Education
+//Course: Cos 202
+
+First 3 iterations (starting total=0, i=1)
+
+| Iteration | i (after iteration) | total (after iteration) |
+|---:|---:|---:|
+| 1 | 2 | 1 |
+| 2 | 3 | 3 |
+| 3 | 4 | 6 |
