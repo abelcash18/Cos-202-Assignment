@@ -1,0 +1,23 @@
+When I designed validation for the Vehicle class, I prioritized fail-fast, local, and single-source-of-truth principles. 
+Design decisions I made
+1. Constructor + Setter Validation: I put all invariants in the constructor and in setters, not in external functions. 
+That way a Vehicle object can never exist in an invalid state. For example: year must be between 1886 and current_year + 1,
+ vin must be 17 chars and pass a checksum, and license_plate cannot be empty. This keeps validation logic co-located with the data it protects.
+2. Specific Exceptions, Not Silent Fixes: Instead of auto-correcting bad input like trimming a VIN or defaulting a year, 
+I raise typed exceptions like InvalidVINError or InvalidYearError. Silent corrections hide bugs, especially when data comes from multiple teams.
+3. Validation vs Business Rules Separation: I kept “is this data well-formed?” separate from “is this allowed right now?”.
+ Format, range, and null checks live in Vehicle. Rules like “electric vehicles can’t have fuel_capacity > 0” went into a service layer.
+  That prevents the model from getting bloated.
+  What I’d change for a 50-developer fleet system 
+With 50 developers, scale and consistency become the risk. 
+I’d make 3 changes: 
+
+   i.Centralized Schema + Code Generation:
+     Replace ad-hoc checks with a shared schema using Pydantic, JSON Schema, or Protobuf. Generate Vehicle models from it.
+    This enforces one validation spec across services and avoids 50 different if statements. 
+
+   ii. Async/External Validation: Some checks can’t be local,  e.g. “VIN already registered” or “plate not duplicated in fleet”.
+   I’d move those to a VehicleValidator service with clear sync vs async boundaries,  so developers don’t block constructors on DB calls.
+
+  iii. Observability + Versioning: Add structured validation errors with error codes for logging/metrics,
+   and version the schema. With many teams, you need to see which service is sending bad data, and you can’t break everyone when Vehicle v2 adds fields.
