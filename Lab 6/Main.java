@@ -1,3 +1,11 @@
+// Name: Joseph Abel Olayinka
+// Matric no:  EDU2509276
+// Faculty: Education
+// Department: Curriculum and Instructional Technology
+// Course area: Computer Science Education
+// Course: Cos 202
+// Level:200 Direct-Entry
+
 public class Main {
     public static void main(String[] args) {
         // 1. Animals
@@ -19,7 +27,7 @@ public class Main {
         // 3. Payable Entities
         Payable employee = new Employee("Alice", 5000.0);
         Payable invoice = new Invoice("Part-404", 3, 25.0);
-        System.out.println("Employee Payment: $" + employee.getPaymentAmount());
+        System.out.println("Employee Payment: $" + employee.getPaymentAmount()); 
         System.out.println("Invoice Total: $" + invoice.getPaymentAmount());
 
         System.out.println("---");

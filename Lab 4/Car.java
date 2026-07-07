@@ -1,3 +1,11 @@
+// Name: Joseph Abel Olayinka
+// Matric no:  EDU2509276
+// Faculty: Education
+// Department: Curriculum and Instructional Technology
+// Course area: Computer Science Education
+// Course: Cos 202
+// Level:200 Direct-Entry
+
 public class Car extends Vehicle {
     private int numberOfDoors;
     private boolean isElectric;
@@ -8,7 +16,6 @@ public class Car extends Vehicle {
         this.numberOfDoors = numberOfDoors;
         this.isElectric = isElectric;
     }
-
     // Overriding the display method to add Car-specific details on separate lines
     @Override
     public void displayInfo() {

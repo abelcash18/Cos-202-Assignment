@@ -1,3 +1,11 @@
+// Name: Joseph Abel Olayinka
+// Matric no:  EDU2509276
+// Faculty: Education
+// Department: Curriculum and Instructional Technology
+// Course area: Computer Science Education
+// Course: Cos 202
+// Level:200 Direct-Entry
+
 public class MatrixTransposeDemo {
 
     public static void main(String[] args) {
@@ -7,15 +15,11 @@ public class MatrixTransposeDemo {
             {5, 6, 7, 8},
             {9, 10, 11, 12}
         };
-
         System.out.println("--- Original Matrix ---");
         printMatrix(originalMatrix);
-
         // 2. Compute the Transpose
         int rows = originalMatrix.length;        // 3
-        int columns = originalMatrix[0].length;  // 4
-        
-        // The dimensions of the transpose matrix will be flipped (4x3)
+        int columns = originalMatrix[0].length;  // 4  
         int[][] transposeMatrix = new int[columns][rows];
 
         for (int i = 0; i < rows; i++) {
@@ -24,12 +28,9 @@ public class MatrixTransposeDemo {
                 transposeMatrix[j][i] = originalMatrix[i][j];
             }
         }
-
         System.out.println("\n--- Transposed Matrix ---");
         printMatrix(transposeMatrix);
     }
-
-    // Helper method to print a 2D array cleanly
     public static void printMatrix(int[][] matrix) {
         for (int[] row : matrix) {
             for (int element : row) {
