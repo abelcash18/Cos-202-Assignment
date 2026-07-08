@@ -25,7 +25,6 @@ class Employee implements Payable {
         return salary;
     }
 }
-
 // Entity 2: Invoice (unrelated to Employee, but still Payable)
 class Invoice implements Payable {
     private String partNumber;
@@ -37,7 +36,6 @@ class Invoice implements Payable {
         this.quantity = quantity;
         this.pricePerItem = pricePerItem;
     }
-
     @Override
     public double getPaymentAmount() {
         return quantity * pricePerItem;

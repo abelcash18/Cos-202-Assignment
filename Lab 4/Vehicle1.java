@@ -13,7 +13,6 @@ public class Vehicle1  {
     private int productionYear;  // Updated from 'year' to match your request
     private String color;
     private boolean isRunning;
-
     // Constructor
     public Vehicle1(String manufacturer, String model, int productionYear, String color) {
         this.manufacturer = manufacturer;
@@ -22,7 +21,6 @@ public class Vehicle1  {
         this.color = color;
         this.isRunning = false;
     }
-
     // New method to display the vehicle's specific info
     public void displayInfo() {
         System.out.println("--- Vehicle Information ---");
@@ -33,7 +31,6 @@ public class Vehicle1  {
         System.out.println("Engine Status:   " + (isRunning ? "Running" : "Off"));
         System.out.println("---------------------------");
     }
-
     // Engine control methods
     public void startEngine() {
         if (!isRunning) {
